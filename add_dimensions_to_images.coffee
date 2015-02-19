@@ -22,4 +22,4 @@ insertImageDimensionsIntoDocument = (documentFile, imageFile, dimensions) ->
   HTML = FileSystem.readFileSync(documentFile, "utf-8")
   console.info pattern = """<img src="#{imageFile}">"""
   console.info replacement = """<img src="#{imageFile}" height="#{height}" width="#{width}">"""
-  # FileSystem.writeFileSync(documentFile, HTML.replace(pattern, replacement), "utf-8")
+  FileSystem.writeFileSync(documentFile, HTML.replace(pattern, replacement), "utf-8")
