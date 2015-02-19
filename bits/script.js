@@ -117,7 +117,7 @@
 
   resizeBody = function() {
     var bodyWidth, el, i, len, ref;
-    bodyWidth = -22 - 22;
+    bodyWidth = 0;
     ref = document.body.querySelectorAll('div.photoshoot');
     for (i = 0, len = ref.length; i < len; i++) {
       el = ref[i];

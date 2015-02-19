@@ -9,7 +9,7 @@ body, header, footer, div, h1, p, table, nav { margin: 0; padding: 0; position: 
 body {
   background: hsl(0, 0%, 95%);
   font: normal 13px/22px sans-serif;
-  -webkit-text-size-adjust: none; 
+  -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
 
@@ -137,7 +137,7 @@ div.photoshoot {
   float: left;
   padding-bottom: 230px;
 }
-div.photoshoot + div.photoshoot {
+div.photoshoot {
   margin-left: 22px;
 }
 
