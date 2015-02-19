@@ -1,4 +1,4 @@
-window.onload = (event) ->
+document.addEventListener "DOMContentLoaded", (event) ->
   resize(event)
   window.onresize = resize
   document.body.classList.add("loaded")
@@ -48,7 +48,12 @@ resize = (event) ->
   resizeBody()
 
 resizePhoto = (el) ->
-  el.style.height = calculatePhotoHeightForWindow() + 'px'
+  photoHeight = Number(el.getAttribute("height"))
+  photoWidth = Number(el.getAttribute("width"))
+  scaledHeight = calculatePhotoHeightForWindow()
+  scaledWidth = Math.round((scaledHeight / photoHeight) * photoWidth)
+  el.style.height = scaledHeight + 'px'
+  el.style.width = scaledWidth + 'px'
 
 resizePhotoshoot = (el) ->
   coverElement = el.querySelector("div.cover")
