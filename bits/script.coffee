@@ -70,7 +70,7 @@ resizePhotoshoot = (el) ->
   el.style.transition = ""
 
 resizeBody = ->
-  bodyWidth = -22-22
+  bodyWidth = 0
   bodyWidth += parseInt(el.style.width) + 22 for el in document.body.querySelectorAll('div.photoshoot')
   document.body.style.width = bodyWidth + "px"
 
