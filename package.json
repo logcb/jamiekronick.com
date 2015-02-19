@@ -1,0 +1,16 @@
+{
+  "name": "jamiekronick.com",
+  "private": true,
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "glob": "^4.4.0",
+    "image-size": "^0.3.5"
+  },
+  "scripts": {
+    "start": "coffee --watch --compile bits/script.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/logcb/jamiekronick.com.git"
+  }
+}
